@@ -11,3 +11,6 @@ console.log(vowels.length);
 console.log(naykas.length);
 
 
+// we use index to access array
+
+
