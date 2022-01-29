@@ -23,6 +23,12 @@ console.log(friendsAge);
 
 var ourAge  = [12,11,14,15,13];
 ourAge.pop();
+ourAge.pop();
+ourAge.pop();
+ourAge.pop();
+ourAge.pop();
+ourAge.pop();
+ourAge.pop();
 console.log(ourAge)
 
 
