@@ -13,6 +13,8 @@ console.log(romanticFeelings < herLove);
 
 console.log(isBanker || goodStudent);
 
+// around a million people and still alone
+
 
 
 
