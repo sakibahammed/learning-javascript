@@ -32,3 +32,6 @@ console.log(computer);
 
 computer.Storage = '256 gb';
 console.log(computer)
+
+computer.Storage = '1 tb';
+console.log(computer)
