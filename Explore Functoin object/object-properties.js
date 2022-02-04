@@ -15,3 +15,20 @@ console.log(computer.processor);
 
 var computerPrice = computer.price;
 console.log(computerPrice);
+
+// seting a object Property 
+
+computer.price = 22000;
+console.log(computer);
+
+// different ways to set a value of an object property
+
+computer.price = 22000;
+computer["price"] = 23000;
+var propertyName = "price";
+computer[propertyName] = 24000;
+
+console.log(computer);
+
+computer.Storage = '256 gb';
+console.log(computer)
