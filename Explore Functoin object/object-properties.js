@@ -12,6 +12,7 @@ console.log(computer);
 // object er property dekhar jnne { objectName.propertyName}
 
 console.log(computer.processor);
+console.log(computer['Storage']);
 
 var computerPrice = computer.price;
 console.log(computerPrice);
