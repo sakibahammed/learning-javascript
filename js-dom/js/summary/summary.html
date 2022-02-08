@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h2>My friends</h2>
+        <ul id ="friends">
+            <li>frnd-1</li>
+            <li>frnd-2</li>
+            <li>frnd-3</li>
+            <li>frnd-4</li>
+            <li>frnd-5</li>
+            <li>frnd-6</li>
+            <li>frnd-7</li>
+            <li>frnd-8</li>
+            <li>frnd-9</li>
+            <li>frnd-10</li>
+
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut consectetur assumenda explicabo nesciunt nostrum delectus saepe vitae aperiam porro! Et laborum beatae iusto nostrum officia temporibus, sit excepturi magnam.</p>
+        <p id="second-peragraph">Perferendis exercitationem sit dolores, debitis est molestias maxime officia praesentium necessitatibus numquam fuga eum? Itaque magni ipsum quia, id totam alias iste quos quae vel reiciendis corrupti iusto consectetur a!</p>
+        <p>Assumenda expedita mollitia provident fugiat id ex dolore officia, at, odit dicta nemo atque doloribus repellat commodi sit ipsa reiciendis illum blanditiis veritatis officiis, accusantium nam saepe. Sequi, nisi nostrum.</p>
+        <p>Possimus in rem molestias ullam fugiat deleniti dignissimos ducimus atque placeat, mollitia reprehenderit iste at earum error repellat eius nobis. Reiciendis reprehenderit aliquid ducimus porro repudiandae? Repellendus nesciunt doloremque laudantium.</p>
+        <p>Ullam omnis repellendus ut iure harum, distinctio a, hic quod fugit blanditiis magni dolores? Quas accusamus velit inventore suscipit sequi officiis at dignissimos cumque vero. Aliquid doloribus vero dicta vel.</p>
+    </main>
+
+    <script>
+        const blogs = document.getElementsByTagName('p');
+        for(const blog of blogs){
+            blog.style.backgroundColor='orangeRed';
+            blog.style.color = 'white'
+        }
+
+        const specialBlog = document.getElementById('second-peragraph');
+        // specialBlog.innerText = 'new harun'
+        specialBlog.innerHTML = `
+            <h1> Special inner html </h1>
+            <div>
+                <ul>
+                    <li> Ami pari </li>
+                    <li> li under li </li>
+                    </ul>
+                    </div>
+        
+        `;
+
+
+
+        const frnds = document.getElementById('friends');
+        // console.log(frnds.children);
+        const fifth = frnds.children[4];
+        frnds.removeChild(fifth);
+        // console.log(fifth)
+
+        // create element 
+
+        const Friened = document.createElement('li');
+        Friened.innerText = 'frnd=-11';
+        friends.appendChild(Friened);
+        
+
+    </script>
+</body>
+</html>
