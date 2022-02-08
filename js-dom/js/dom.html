@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #second-title{
-            
+        .blog{
+            /* border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px; */
         }
     </style>
 </head>
@@ -16,20 +19,20 @@
 
     </header>
     <main>
-        <section>
-            <article>
+        <section class="blogs">
+            <article class="blog">
                 <h3>My Awsome Blog -1</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus impedit molestias voluptates sint laudantium laboriosam qui earum, non amet modi deleniti molestiae sapiente distinctio fuga saepe voluptas cupiditate vitae eum.</p>
             </article>
-            <article>
+            <article id="second-blog" class="blog">
                 <h3 id="second-title">My Awsome Blog -2</h3>
                 <p id="second-peragraph">Vero id sunt repellat esse labore blanditiis aut eum provident temporibus ipsum atque amet quasi nulla itaque tempora ipsam eos dicta quas recusandae optio vitae, nostrum ullam perferendis? Nulla, quas!</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3>My Awsome Blog -3</h3>
                 <p>Culpa modi exercitationem aspernatur similique molestiae suscipit voluptatum quisquam repellendus fugit architecto nihil totam ipsam aperiam aliquam aliquid blanditiis maxime facilis eaque quo cupiditate, tenetur perferendis saepe qui dignissimos. Laboriosam?</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="last-element">My Awsome Blog -4</h3>
                 <p>Culpa modi exercitationem aspernatur similique molestiae suscipit voluptatum quisquam repellendus fugit architecto nihil totam ipsam aperiam aliquam aliquid blanditiis maxime facilis eaque quo cupiditate, tenetur perferendis saepe qui dignissimos. Laboriosam?</p>
             </article>
@@ -74,6 +77,18 @@
     lastElement.style.padding = '10px';
     lastElement.style.borderRadius = '15px';
     
+
+    // gets element by clasName : 
+
+
+    const blogs = document.getElementsByClassName('blog');
+    for(const blog of blogs){
+        console.log(blog);
+        blog.style.border = '2px solid red';
+        blog.style.borderRadius = '10px';
+        blog.style.margin = '10px'
+        blog.style.padding = '5px'
+    }
     </script>
 </body>
 </html>
