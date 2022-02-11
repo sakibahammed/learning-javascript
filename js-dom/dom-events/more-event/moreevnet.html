@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 id="secret-info">Very very important secrt information</h3>
+    <input type="text" name="" id="delete-confirm" placeholder="Please type delete">
+    <button id="delete-button" disabled>Delete</button>
+
+
+
+
+
+    <script>
+        document.getElementById('delete-button').addEventListener('click',function(){
+            document.getElementById('secret-info').style.display='none';
+        })
+
+
+        //focus
+        document.getElementById('delete-confirm').addEventListener('focus',function(){
+            // document.getElementById('secret-info').style.display='none';
+            // console.log('0 amar deke takaice :D')
+            document.body.style.backgroundColor='lightCoral'
+        })
+        //blurr
+        document.getElementById('delete-confirm').addEventListener('blur',function(){
+            // document.getElementById('secret-info').style.display='none';
+            // console.log('0 amar deke takaice :D')
+            document.body.style.backgroundColor='white'
+        })
+
+        //keydown
+        document.getElementById('delete-confirm').addEventListener('keydown',function(){
+            // document.getElementById('secret-info').style.display='none';
+            // console.log('0 amar deke takaice :D')
+            // console.log('key down');
+
+            const deleteField = document.getElementById('delete-confirm');
+            console.log(deleteField.value);
+        })
+
+
+        // key pressed
+        // document.getElementById('delete-confirm').addEventListener('keypress',function(){
+        //     // document.getElementById('secret-info').style.display='none';
+        //     // console.log('0 amar deke takaice :D')
+        //     // console.log('key down');
+
+        //     const deleteField = document.getElementById('delete-confirm');
+        //     console.log(deleteField.value);
+        // })
+
+        // key up
+        document.getElementById('delete-confirm').addEventListener('keyup',function(event){
+            const deleteBtn = document.getElementById('delete-btn');
+            if(event.target.value == 'delete'){
+                document.getElementById('delete-button').removeAttribute('disabled')
+            }
+            else{
+                deleteBtn.setAttribute('disabled',true);
+            }
+        })
+
+        //change event
+        document.getElementById('delete-confirm').addEventListener('change',function(){
+            // document.getElementById('secret-info').style.display='none';
+            // console.log('0 amar deke takaice :D')
+            // console.log('key down');
+
+            const deleteField = document.getElementById('delete-confirm');
+            console.log(deleteField.value);
+        })
+    </script>
+</body>
+</html>
