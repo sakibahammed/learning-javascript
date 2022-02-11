@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h1>Event niye clickbazzi</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log('hello form second button')">Hello</button>
+    <p onclick="alert('Masud tumi valo hoeye jao')">Masud</p>
+
+    <button onclick="document.body.style.backgroundColor='yellow'">Click me Yellow</button>
+    <button onclick="makeRed()">Click me Red</button>
+    <button onclick="makeGreen()">Click me green</button>
+    <button id="makeBlue">click me blue</button>
+    <button id="make-orange">Click Me Orange</button>
+    <button id="make-tomato">Click me tomato</button>
+    <button id="make-goldenRod">Click me Golden Rod</button>
+    <button id="make-hotPink">Click me Hotpink</button>
+    <button id="make-khaki">click me khaki</button>
+
+    <script src="js/event.js"></script>
+    <script>
+        const ornzButton = document.getElementById('make-orange');
+        // console.log(ornzButton);
+        ornzButton.onclick = makeOrnz;
+        function makeOrnz(){
+            document.body.style.backgroundColor="orange"
+        }
+
+
+        const khakiButton = document.getElementById('make-khaki');
+        khakiButton.addEventListener('click',
+            function(){
+                document.body.style.backgroundColor ='khaki';
+            }
+        )
+
+
+        
+      
+
+
+
+    </script>
+</body>
+</html>

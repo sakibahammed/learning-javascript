@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Messege Area</h1>
+    <br>
+
+    <div id="container">
+        
+    </div>
+    <div>
+        <textarea name="" id="firstPerson" cols="30" rows="10"></textarea>
+        <br>
+
+        <button id="submit-button">Send</button>
+    </div>
+    <div>
+        <textarea name="" id="secondPerson" cols="30" rows="10"></textarea>
+        <br>
+
+        <button id="reply-button">Reply</button>
+    </div>
+
+
+
+
+
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click',function(){
+            // console.log('clicked');
+            const firstMsg = document.getElementById('firstPerson');
+            const msg = firstMsg.value;
+            // console.log(msg);
+
+            const newElement = document.createElement('p');
+            newElement.innerText = msg;
+            
+
+
+            const mainContainer = document.getElementById('container');
+            mainContainer.appendChild(newElement);
+            firstMsg.value = '';
+
+
+
+
+           
+
+        })
+
+
+        document.getElementById('reply-button').addEventListener('click',function(){
+                const secondMsg = document.getElementById('secondPerson');
+                // console.log('clicked');
+                const scMsg = secondMsg.value;
+                // console.log(scMsg);
+
+                const secondMEssge = document.createElement('p');
+                secondMEssge .innerText = scMsg
+                // console.log(secondMEssge);
+                const msgRply = document.getElementById('container');
+                msgRply.appendChild(secondMEssge);
+                secondMsg.value = '';
+            })
+    </script>
+</body>
+</html>

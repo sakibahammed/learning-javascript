@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clicking-mathod"></p>
+    <h1 id="name"></h1>
+    <button id="update-name"></button>
+    <input id="name-input" type="text">
+    <button id="update-name">update</button>
+    <button onclick="handelJustFunctionClick()">just function</button>
+    <button id="direct-handel-event">direct add event listener</button>
+
+
+
+
+
+
+
+
+    <script>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // using function
+        function handelJustFunctionClick(){
+            const p = document.getElementById('clicking-mathod');
+            p.innerText = 'set by using javascript';
+        }
+
+
+        // direct
+
+        document.getElementById('direct-handel-event').addEventListener('click',
+            function(){
+                const p  = document.getElementById('clicking-mathod');
+                p.innerText = 'Set by inner text';
+            }
+        );
+
+
+        // direct
+            document.getElementById('update-name').addEventListener('click',
+                function(){
+                    const nameField = document.getElementById('name-input');
+                    console.log(nameField.value);
+                    // const peraGraph = document.getElementById('')
+                    const peraGraph = document.getElementById('clicking-mathod');
+                    peraGraph.innerText = nameField.value;
+                    nameField.value='';
+                }
+            )
+    </script>
+</body>
+</html>

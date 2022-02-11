@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Please add your comment</h2>
+    <section>
+        <h4>your Comment</h4>
+        <div id="comment-container">
+           
+           
+        </div>
+
+        <div>
+            
+            <textarea name="" id="new-comment" cols="60" rows="4"></textarea>
+            <br>
+            <Button id="submit-comment">Post</Button>
+        </div>
+
+        <br>
+
+        <div>
+            <textarea name="" id="ReplyComment" cols="60" rows="4"></textarea>
+            <br>
+            <button id="Reply-comment">Reply</button>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        // reply
+
+        document.getElementById('Reply-comment').addEventListener('click',function(){
+          const reply = document.getElementById('ReplyComment');
+          const replyCommment = reply.value;
+        //   console.log(replyCommment);
+        const newReply = document.createElement('p');
+        newReply.innerText = replyCommment;
+        // console.log(newReply)
+        const mainBody = document.getElementById('comment-container');
+        mainBody.appendChild(newReply);
+        reply.innerText = '';
+        })
+
+        // const pera = document.createElement('p');
+        // pera.innerText = replyCommment;
+
+        // const replyContainer = document.getElementById('comment-container');
+        // replyContainer.appendChild(pera);
+        
+        
+
+
+
+
+
+
+
+
+
+        // step 1 : Add event handelller
+        document.getElementById('submit-comment').addEventListener('click', function(){
+
+            // step:2 get comment
+            const textArea = document.getElementById('new-comment');
+            const userCommment = textArea.value;
+
+            // step 3 creatting new packet or peragraph
+
+            const newComment =document.createElement('p');
+            newComment.innerText = userCommment;
+
+            // appending 
+
+
+            const commentContianer = document.getElementById('comment-container');
+            commentContianer.appendChild(newComment);
+
+
+            // step 5 clean the comment box
+            textArea.value= '';
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
