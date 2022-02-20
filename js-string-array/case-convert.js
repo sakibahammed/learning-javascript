@@ -1,3 +1,6 @@
+// converting a word or case to upper case or lower case
+
+
 const anthem = 'amar shonar bangla ami tomai valobasi';
 
 const searching = 'valo';
