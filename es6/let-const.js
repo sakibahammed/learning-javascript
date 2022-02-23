@@ -17,6 +17,12 @@ numbers[1] = 333,
 console.log(numbers);
 
 
+for(let i = 0;i<numbers.length;i++){
+    const number = numbers[i];
+    console.log(number);
+}
+
+
 Note : // array or object declareation er somoi kono vabe e reaasign kora jaabe na . kintu ekta part niye kaaj kora jaabe
 
 const students = {
