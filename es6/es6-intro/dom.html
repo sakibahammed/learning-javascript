@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="friend-container">
+        <div class="friend">
+            <h3 class="friend-name"></h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="friend">
+            <h3 class="friend-name"></h3>
+            <p>Dolorem asperiores tempore vel inventore.</p>
+        </div>
+        <div class="friend">
+            <h3 class="friend-name"></h3>
+            <p>Fugiat nisi in repellat corrupti.</p>
+        </div>
+        <div class="friend">
+            <h3 class="friend-name"></h3>
+            <p>Voluptate at sunt neque! Iste.</p>
+        </div>
+    </div>
+    <div>
+        <h2>Control Room</h2>
+        <button id="add-border">Add Border</button>
+        <button id="add-background">Add Background</button>
+        <button id="add-friend">Add friend</button>
+        <button>Color friend Name</button>
+        <button>Extra</button>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        document.getElementById('add-border').addEventListener('click',function(){
+
+            const container = document.getElementById('friend-container');
+            container.style.border = '5px solid red'
+        })
+
+
+        // const friends = document.getElementsByClassName('friend');
+        // for(const friend of friends){
+        //     friend.style.backgroundColor = 'red'
+        // }
+
+        document.getElementById('add-background').addEventListener('click',function(){
+            const friends = document.getElementsByClassName('friend');
+            for(const friend of friends){
+                friend.style.backgroundColor = 'red';
+            }
+        })
+
+
+        document.getElementById('add-friend').addEventListener('click',function(){
+            const frinedContainer = document.getElementById('friend-container');
+
+            const friendDiv = document.createElement(div);
+            friendDiv.classList.add('friend');
+            friendDiv.innerHTML =  `
+            <h3 class="friend-name"></h3>
+            <p>Voluptate at sunt neque! Iste.</p>
+            
+            `
+
+            frinedContainer.appendChild(friendDiv);
+        })
+
+
+    </script>
+</body>
+</html>
