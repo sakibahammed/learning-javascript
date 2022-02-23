@@ -16,3 +16,6 @@ numbers.push(45);
 console.log(numbers2);
 
 
+
+// kono ekta array er moddhe joto gula array ace kono ekta jaigay chaile element gula bosai dea jaaai
+
