@@ -36,5 +36,7 @@ products.forEach(product => console.log(product));
 
 // map er kaaj ki ?
 
-map er kaj holo : 
- 1.  proti ta element er jnne loop
+// map er kaj holo : 
+//  1.  proti ta element er jnne loop chalabe
+//  2. fucntion korbe.chalabe. 
+//  3. function er jonne jei kaaj korbe ta ekta array te return korbe
