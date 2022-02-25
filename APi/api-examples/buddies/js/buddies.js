@@ -7,15 +7,7 @@ const loadBuddies = () => {
 loadBuddies();
 
 const diplaybuddies = data =>{
-    // const buddies = data.results;
-    // const buddiesDiv = document.getElementsByClassName('buddies');
-    // for(const buddy of buddies){
-    //     const p = document.createElement('p');
-    //     p.innerText = buddy.email;
-    //     buddiesDiv.appendChild(p);
-    // }
-
-
+  
     // console.log(data);
     const buddies = data.results;
     // console.log(buddies);
