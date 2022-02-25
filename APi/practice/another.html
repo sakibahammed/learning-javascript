@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+        
+    </div>
+    <button onclick="loadToDoes()">
+        Load todos
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function loadToDoes(){
+            fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(res => res.json())
+            .then(data => displayTodoes(data))
+        }
+
+        function displayTodoes(data){
+            // console.log(data);
+            const container = document.getElementById('container');
+            for(const toDo of data){
+                // console.log(toDo.title);
+                const p = document.createElement('p');
+                p.innerText = ` user id : ${toDo.userId}
+                                id : ${toDo.id}
+                                title : ${toDo.title}
+                                completed : ${toDo.completed}`
+                
+                container.appendChild(p);
+            }
+
+
+            
+        }
+    </script>
+</body>
+</html>
