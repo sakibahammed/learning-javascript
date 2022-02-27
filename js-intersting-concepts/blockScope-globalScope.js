@@ -28,8 +28,10 @@ const sum = add(12,13);
 
     Note : 
 
-    let and const block scope er moddhe thakbe
+    let and const block scope er moddhe thakbe eder k hoiste kora hbe na
+    .. var likhle hoiste hbe... variable er aage kichu na likhtle global hoeye jbe.
     
+
 
 
 
