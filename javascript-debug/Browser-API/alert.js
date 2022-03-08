@@ -29,5 +29,5 @@ const askName = ()=>{
 
 /* 
 alert holo just messege ta debe
-confirm holo user 
+confirm holo tumi confirm koro tumi eta korte chao naki chao na... tru false return korbe....... prompt diye input niye kaaj kora jaai
 */
