@@ -24,3 +24,10 @@ const askName = ()=>{
    const name =  prompt('what is your name');;
    console.log(name);
 }
+
+
+
+/* 
+alert holo just messege ta debe
+confirm holo user 
+*/
