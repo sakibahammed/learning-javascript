@@ -1,0 +1,16 @@
+Differrence  between localStorage and session storage : 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
+
+
+
+getItem() use kore local storage and session storage theke kono nirdisto value pawar jnne get item use kora hoi
+
+
+localStorage.getItem('property_name')
+
+
+kono kichu set korar jonne setItem use kora hoi
+
+eg :  localStorage.setItem('property_name',value)
