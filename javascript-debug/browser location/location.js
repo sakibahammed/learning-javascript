@@ -18,8 +18,10 @@
 
     Read this article : https://developer.mozilla.org/en-US/docs/Web/API/Location
 
-    
+    Main jinis holo browser e loaction naam er ekta jinis ace. jeta diye url er bivinno jinis gulo k acceses kora jaai...url er puro ta holo href and question marks diye jeta pawa jaai seta holo search-query..... 
 
+
+    
 
 
  
