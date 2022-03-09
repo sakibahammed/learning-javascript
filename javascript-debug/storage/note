@@ -14,3 +14,11 @@ localStorage.getItem('property_name')
 kono kichu set korar jonne setItem use kora hoi
 
 eg :  localStorage.setItem('property_name',value)
+
+
+
+
+// amra local storage e jaa pabo seta object hesebe pabo
+
+
+cookies k server e pathano jaai.. local storage and session storage k server e pathano jaai na eta browser e thake...
