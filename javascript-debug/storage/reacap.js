@@ -26,6 +26,9 @@ document.body.contentEditable = true;
 
 // browser e new tab khular jnnne 
 
+
+// url select korar jnne ===========> cntrt / cmd + l
+
 // chrome://newtab
 // kothay k space khacche ta dekhar jnne ( shift  + esc ) use kora hoi 
 
